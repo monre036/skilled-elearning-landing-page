@@ -1,0 +1,77 @@
+.card {
+  width: 21.4375rem;
+  height: 4.875rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    color: #13183f;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+
+  &__button {
+    padding-inline: 1.5rem;
+    padding-block: 10px;
+    background-color: #13183f;
+    border-radius: 1.75rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__main {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    color: #13183f;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  &__text {
+    color: #83869a;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    margin-bottom: 35px;
+  }
+
+  &__button--pink {
+    padding-inline: 37px;
+    padding-block: 17px;
+    background-image: linear-gradient(#ff6f48, #f02aa6);
+    line-height: 26px;
+    border-radius: 30px;
+  }
+
+  &__stats {
+    width: 327px;
+    height: 301px;
+  }
+
+  &__courses {
+    height: 1695px;
+    background-image: linear-gradient(#ffffff, #f0f1ff);
+  }
+
+  &__coursestitlte {
+    padding-inline: 30px;
+    padding-block: 27px;
+    background-image: linear-gradient(#ff6f48, #f02aa6);
+    border-radius: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+  }
+}
