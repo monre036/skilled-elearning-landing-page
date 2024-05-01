@@ -58,7 +58,7 @@
     }
 }
 
-.header__img {
+.header__image {
     @include responsive(tablet) {
         position: absolute;
         content: '';

@@ -1,10 +1,10 @@
-@use '../mixins/responsive.scss' as *;
 @use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
 
 .button {
-    border-radius: 1.75rem;
+    border-radius: 28px;
     background-color: transparent;
-    color: var(--color-white);
+    color: #FFFFFF;
     text-align: center;
     padding: 9px 24px 11px 24px;
     font-size: 1rem;
@@ -17,20 +17,31 @@
     }
 }
 
-.button--dark {
-    background-color: var(--color-darkblue);
-
-    @include hover {
-        background-color: var(--color-blue);
-    }
-}
-
 .button--pink {
     background-image: linear-gradient(#ff6f48, #f02aa6);
-    width: 10.4375rem;
+    width: 167px;
 
     @include hover {
         background-image: linear-gradient(#ff70485f, #f02aa764);
+    }
+}
+
+.button--dark {
+    background-color: #13183F;
+
+    @include hover {
+        background-color: #666CA3;
+    }
+}
+
+.button__ghost {
+    margin: 0;
+    padding: 0;
+    color: #F74780;
+    text-align: left;
+
+    @include hover {
+        color: #ffa8c4;
     }
 }
 
@@ -39,16 +50,5 @@
 
     @include hover {
         background-image: linear-gradient(#4851ff6a, #f02aa759);
-    }
-}
-
-.button--ghost {
-    margin: 0;
-    padding: 0;
-    color: var(--color-pink);
-    text-align: left;
-
-    @include hover {
-        color: var(--color-lightpink);
     }
 }

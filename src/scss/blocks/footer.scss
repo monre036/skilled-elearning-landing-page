@@ -1,22 +1,22 @@
 @use '../mixins/responsive.scss' as *;
 
 .footer {
-    background-color: var(--color-darkblue);
+    background-color: #13183F;
     display: flex;
-    padding-inline: 1rem;
-    padding-block: 2.25rem;
+    padding-inline: 16px;
+    padding-block: 36px;
     justify-content: space-between;
 
     @include responsive(tablet) {
-        padding-inline: 2.5rem;
+        padding-inline: 40px;
     }
 
     @include responsive(desktop) {
-        padding-inline: 10.3125rem;
+        padding-inline: 165px;
     }
 }
 
-.logo--footer {
+.logo__footer {
     position: relative;
     top: 10px;
 }
