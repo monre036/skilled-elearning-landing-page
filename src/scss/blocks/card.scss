@@ -1,77 +1,112 @@
+@use '../mixins/responsive.scss' as *;
+
+.card-container {
+  display: grid;
+  gap: 40px;
+
+  @include responsive(tablet) {
+    grid-template-columns: repeat(2, 339px);
+    gap: 64px 10px;
+    justify-content: center;
+  }
+
+  @include responsive(desktop) {
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 56px 30px;
+    justify-content: center;
+  }
+}
+
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 21.4375rem;
-  height: 4.875rem;
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  padding: 64px 32px 40px 32px;
+}
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card__logo {
+  position: absolute;
+  top: -25px;
+  width: 56px;
+  border-radius: 100%;
+}
+
+.card--gradient {
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+  padding: 24px 29px 32px 28px;
+
+  @include responsive(tablet) {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
-  &__name {
-    color: #13183f;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 800;
+  @include responsive(desktop) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.card--animation {
+  @include responsive(tablet) {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 
-  &__button {
-    padding-inline: 1.5rem;
-    padding-block: 10px;
-    background-color: #13183f;
-    border-radius: 1.75rem;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 28px;
+  @include responsive(desktop) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.card--design {
+  @include responsive(tablet) {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 
-  &__main {
-    margin-bottom: 35px;
+  @include responsive(desktop) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+.card--photography {
+  @include responsive(tablet) {
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
-  &__title {
-    color: #13183f;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
+  @include responsive(desktop) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.card--crypto {
+  @include responsive(tablet) {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 
-  &__text {
-    color: #83869a;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.625rem;
-    margin-bottom: 35px;
+  @include responsive(desktop) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.card--business {
+  @include responsive(tablet) {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
-  &__button--pink {
-    padding-inline: 37px;
-    padding-block: 17px;
-    background-image: linear-gradient(#ff6f48, #f02aa6);
-    line-height: 26px;
-    border-radius: 30px;
-  }
-
-  &__stats {
-    width: 327px;
-    height: 301px;
-  }
-
-  &__courses {
-    height: 1695px;
-    background-image: linear-gradient(#ffffff, #f0f1ff);
-  }
-
-  &__coursestitlte {
-    padding-inline: 30px;
-    padding-block: 27px;
-    background-image: linear-gradient(#ff6f48, #f02aa6);
-    border-radius: 10px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 32px;
+  @include responsive(desktop) {
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
 }
