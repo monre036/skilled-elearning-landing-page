@@ -3,41 +3,105 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- PON UN FAVICON!!! -->
-  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png" />
+  <link rel="icon" type="image/svg+xml" href="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CAMBIA EL TITLE!!! -->
-  <title>Vite Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <title>Skilled Elearning Landing Page</title>
 </head>
 
 <body>
-  <main class="main">
-    <div class="card">
-      <div class="card__header">
-        <span class="card__name">skilled</span>
-        <a class="card__button" href="#">Get Started</a>
-      </div>
-      <div class="card__main">
-        <h1 class="card__title">Maximize skill,
-          minimize budget</h1>
-        <p class="card__text">Our modern courses across a range of in-demand skills will give you the knowledge you need
-          to live the life
-          you want.</p>
-        <a class="card__button card__button--pink" href="#">Get Started</a>
-      </div>
-      <div class="card__stats">
-        <img class="card__image" src="./assets/images/image-hero-mobile.png" alt="">
-      </div>
-      <div class="card__courses">
-        <p class="card__coursestitlte">Check out our most popular courses!</p>
-        <div class="card__course"></div>
-      </div>
+  <header class="header">
+    <div class="header__top">
+      <img class="logo" src="./assets/images/logo-dark.svg" alt="" />
+      <a class="button button--dark" href="#">Get Started</a>
     </div>
+    <section class="header__item">
+      <div class="header__text">
+        <h1 class="tittle">Maximize skill, minimize budget</h1>
+        <p class="text">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <a class="button button--pink" href="#">Get Started</a>
+      </div>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./assets/images/image-hero-desktop.webp" />
+        <source media="(min-width: 768px)" srcset="./assets/images/image-hero-tablet.webp" />
+        <source media="(min-width: 360px)" srcset="./assets/images/image-hero-mobile.webp" />
+        <img class="header__img" src="./assets/images/image-hero-mobile.webp" alt="" />
+      </picture>
+    </section>
+  </header>
+  <main class="main">
+    <section class="card-container">
+      <div class="card card--gradient">
+        <p class="text-bold">Check out our most popular courses!</p>
+      </div>
+      <div class="card card--logo card--animation">
+        <img class="card__logo" src="./assets/images/icon-animation.svg" alt="" />
+        <div class="card__item">
+          <h2 class="subtitle">Animation</h2>
+          <p class="text">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+        </div>
+        <a class="button button--ghost" href="#">Get Started</a>
+      </div>
+      <div class="card card--logo card--design">
+        <img class="card__logo" src="./assets/images/icon-design.svg" alt="" />
+        <div class="card__item">
+          <h2 class="subtitle">Design</h2>
+          <p class="text">
+            Create beautiful, usable interfaces to help shape the future of
+            how the web looks.
+          </p>
+        </div>
+        <a class="button button--ghost" href="#">Get Started</a>
+      </div>
+      <div class="card card--logo card--photography">
+        <img class="card__logo" src="./assets/images/icon-photography.svg" alt="" />
+        <div class="card__item">
+          <h2 class="subtitle">Photography</h2>
+          <p class="text">
+            Explore critical fundamentals like lighting, composition, and
+            focus to capture exceptional photos.
+          </p>
+        </div>
+        <a class="button button--ghost" href="#">Get Started</a>
+      </div>
+      <div class="card card--logo card--crypto">
+        <img class="card__logo" src="./assets/images/icon-crypto.svg" alt="" />
+        <div class="card__item">
+          <h2 class="subtitle">Crypto</h2>
+          <p class="text">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+        </div>
+        <a class="button button--ghost" href="#">Get Started</a>
+      </div>
+      <div class="card card--logo card--business">
+        <img class="card__logo" src="./assets/images/icon-business.svg" alt="" />
+        <div class="card__item">
+          <h2 class="subtitle">Business</h2>
+          <p class="text">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+        </div>
+        <a class="button button--ghost" href="#">Get Started</a>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <img class="logo logo--footer" src="./assets/images/logo-light.svg" alt="" />
+    <a class="button button--purple" href="#">Get Started</a>
+  </footer>
 
   <script type="module" src="./js/index.js"></script>
 </body>
